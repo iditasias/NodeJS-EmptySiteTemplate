@@ -20,7 +20,7 @@ pipeline {
 
     stage('test code') {
       steps {
-        sh '''chmod 777 testcode.sh && ./testcode.sh
+        sh '''chmod +x testcode.sh && ./testcode.sh
 
 '''
       }

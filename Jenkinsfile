@@ -20,7 +20,8 @@ pipeline {
 
     stage('test code') {
       steps {
-        sh 'node server.js'
+        sh '''node server.js &
+curl 10.100.102.201:8081'''
       }
     }
 

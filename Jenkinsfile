@@ -18,5 +18,11 @@ pipeline {
       }
     }
 
+    stage('test code') {
+      steps {
+        sh 'node server.js'
+      }
+    }
+
   }
 }
